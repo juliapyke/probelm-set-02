@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Photo Journal - 09/01/2019</title>
-  <h1>My Photo Journal</h1>
-  <p>A collection of photographs I like, updated daily</p>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,7 +19,7 @@
       <!-- Image Post -->
       <header>
         <h2>The Cutest Puppy!</h2>
-        <div class="time-posted">Posted <time datetime="2019-09-01">last year</time></div>
+        <p class="time-posted">Posted <time datetime="2019-09-01">last year</time></p>
       </header>
 
       <p>OMG I found the <em>CUTEST</em> puppy! Check it out!</p>
@@ -34,16 +32,15 @@
     <section>
       <!-- Comment Form -->
       <form>
-        <h3>Leave a comment</h3>
+        <h2>Leave a comment</h2>
         <div>
-          Email: <input name="email" type="email" id="email_input" placeholder="email@domain.com">
-          Password: <input name="password" type="password" id="password_input">
+          <label for="email_input">Email: </label><input name="email" type="email" id="email_input" placeholder="email@domain.com">
+          <label for="password_input">Password: </label><input name="password" type="password" id="password_input">
         </div>
         <div>
-          Comment:
-          <textarea name="comment" class="form-control" id="comment_field"></textarea>
+          <label for="comment_field">Comment: </label><textarea name="comment" class="form-control" id="comment_field"></textarea>
         </div>
-        <button type="submit"><i class="fas fa-pencil-alt"></i></button>
+        <button type="submit"><i class="fas fa-pencil-alt" aria-label="Submit"></i></button>
       </form>
     </section>
   </main>
@@ -51,10 +48,10 @@
   <!-- Author Info -->
   <footer>
     <p>This journal was created by me using my own two hands.</p>
-    <p>
-      Contact me at me@here.com, or at (555) 123-4567.
-    </p>
-    <p>copyright 2019 The Author.</p>
+    <address>
+      Contact me at <a href="mailto:me@here.com">me@here.com</a>, or at <a href="tel:555-123-4567">(555) 123-4567</a>.
+    </address>
+    <p>&copy; 2019 The Author.</p>
   </footer>
 
 </body>
