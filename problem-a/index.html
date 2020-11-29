@@ -11,42 +11,51 @@
 </head>
 <body class="container">
 
-  <!-- Page Title -->
+  <header>
+    <h1>My Photo Journal</h1>
+    <p>A collection of photographs I like, updated daily</p>
+  </header>
 
+  <main>
+    <section>
+      <!-- Image Post -->
+      <header>
+        <h2>The Cutest Puppy!</h2>
+        <div class="time-posted">Posted <time datetime="2019-09-01">last year</time></div>
+      </header>
 
+      <p>OMG I found the <em>CUTEST</em> puppy! Check it out!</p>
+      <p>
+        <img src="img/2959326615_af04f9878a_z.jpg" alt="A fuzzy-looking puppy.">
+      </p>
+      <p>This picture is <cite>"Bizzard, the pup", by Frank Harvey. From the <a href="https://www.flickr.com/photos/statelibraryofnsw/2959326615/">State Library of NSW</a></cite>.</p>
+    </section>
 
-  <!-- Image Post -->
-  <h3>The Cutest Puppy!</h3>
-  <h6>Posted last year</h6>
-
-  <p>OMG I found the <i>CUTEST</i> puppy! Check it out!</p>
-  <p>
-    <img src="img/2959326615_af04f9878a_z.jpg">
-  </p>
-  <p>This picture is <i>"Bizzard, the pup", by Frank Harvey. From the <a href="https://www.flickr.com/photos/statelibraryofnsw/2959326615/">State Library of NSW</a></i>.</p>
-
-
-  <!-- Comment Form -->
-  <form>
-    <h3>Leave a comment</h3>
-    <div>
-      Email: <input id="email_input" placeholder="email@domain.com">
-      Password: <input id="password_input">
-    </div>
-    <div>
-      Comment:
-      <textarea class="form-control" id="comment_field"></textarea>
-    </div>
-    <button type="submit"><i class="fas fa-pencil-alt"></i></button>
-  </form>
-
+    <section>
+      <!-- Comment Form -->
+      <form>
+        <h3>Leave a comment</h3>
+        <div>
+          Email: <input name="email" type="email" id="email_input" placeholder="email@domain.com">
+          Password: <input name="password" type="password" id="password_input">
+        </div>
+        <div>
+          Comment:
+          <textarea name="comment" class="form-control" id="comment_field"></textarea>
+        </div>
+        <button type="submit"><i class="fas fa-pencil-alt"></i></button>
+      </form>
+    </section>
+  </main>
 
   <!-- Author Info -->
-  <p>This journal was created by me using my own two hands.</p>
-  <p>
-    Contact me at me@here.com, or at (555) 123-4567.
-  </p>
-  <p>copyright 2019 The Author.</p>
- 
+  <footer>
+    <p>This journal was created by me using my own two hands.</p>
+    <p>
+      Contact me at me@here.com, or at (555) 123-4567.
+    </p>
+    <p>copyright 2019 The Author.</p>
+  </footer>
+
 </body>
 </html>
